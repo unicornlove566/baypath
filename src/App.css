@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@font-face {
+    font-family: 'Segeo UI';   /* Name your font (this will be used in your styles) */
+    src: url('./fonts/segoeuithis.ttf') format('truetype'); /* Path to your .ttf font file */
+    font-weight: normal;         /* Define the font weight (normal, bold, etc.) */
+    font-style: normal;          /* Define the font style (normal, italic, etc.) */
+}
+
+
+* {
+
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+	scroll-behavior: smooth;
+	outline: none;
+	max-zoom: 0;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+
+	/* Set line height for readability */
+	line-height: 1.5;
+
+	/* Adjust letter spacing (kerning) */
+	letter-spacing: 0.02em;
+    -webkit-font-smoothing: antialiased; /* For Webkit-based browsers */
+    -moz-osx-font-smoothing: grayscale; /* For Firefox on macOS */
+    text-rendering: optimizeLegibility; /* For all browsers */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+html{
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100wv;
+    height: 100vh;
+    background-image: url('../src/assets/illustration.jpg');
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    filter: contrast(100%);
+    /* filter: brightness(25%); */
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #111827ea;
+
+}
+
+.mother{
+    /* background-color: rgba(17, 24, 39, 0.932) ; */
+    position: absolute;
+    width: 100vw !important;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo, .form{
+    width: 48%;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+.logo img{
+    max-width: 346px;
+    max-height: 197px;
+}
+
+.f-head{
+    color: white;
+    font-weight: 300;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: .2rem;
+    max-width: 390px;
+}
+
+input{
+    width: 100%;
+    height: 45px;
+    padding: 0 0 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+input:focus{
+    border: 1px solid orange;
+}
+
+.submit{
+    background-color: #9D2235;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.8;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+}
+
+.container{
+    display: flex;
+    column-gap: 2rem;
+}
+
+.separator{
+    background-color: #a2a8aa;
+    width: 1px;
+    height: 250px;
+    align-self: center !important;
+}
+
+.forgot{
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14.4px;
+}
+
+.note{
+    color: white;
+    width: 390px;
+    font-size: 13.5px;
+    line-height: 1.5;
+    max-width: 390px;
+}
+
+.copyright{
+    position: absolute;
+    bottom: 35px;
+    color: white;
+    font-size: 12px;
+}
+
+.error-message{
+    color: orange;
+    max-width: 390px;
+    padding: 0 1rem 0 0;
+}
+
+@media screen and (max-width:760px) {
+    .container{
+        flex-direction: column;
+        row-gap: 1rem;
+        padding: 0px 1rem;
+        margin-top: -2rem;
+        width: 100%;
+    }
+
+    .separator{
+        display: none;
+    }
+
+    .logo img{
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .form, .logo{
+        width: 100%;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    form{
+        width: 100%;
+
+    }
+
+    .logo{
+        justify-content: center;
+        align-items: center;
+    }
+
+    input:focus{
+        border: 1px solid orange;
+    }
+
+    .copyright{
+        position: absolute;
+        bottom: 9%;
+        color: white;
+    }
+
+    html{
+        background-image: none;
+    }
+
+    .f-head{
+        font-size: 20px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .error-message{
+        max-width: 390px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        font-size: .8rem;
+        color: #c85305;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    }
+
+    .note{
+        width: 100%;
+    }
+
+    .note h3{
+        font-size: 14.4px;
+        font-weight: 500;
+    }
+
+    .note p{
+        font-family: 'Segeo UI';
+        font-size: 14px;
+    }
+}
