@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Logo from '/src/assets/logo.png'
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -148,7 +149,7 @@ const Login = () => {
     <div className="mother">
       <div className="container">
         <div className="logo">
-          <img src="./src/assets/logo.png" alt="" />
+          <img src={Logo} alt="" />
         </div>
         <div className="separator"></div>
         <div className="form">
