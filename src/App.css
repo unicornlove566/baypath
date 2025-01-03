@@ -163,6 +163,8 @@ input:focus{
     bottom: 35px;
     color: white;
     font-size: 12px;
+    left: 350px;
+    bottom: 60px;
 }
 
 .error-message{
